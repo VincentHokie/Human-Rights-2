@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/* Mobile Layout: 480px and below. */
+
+a {color:black}
+
+a:hover {color:black; text-decoration:none}
+
+a:visited {color:black; text-decoration:none}
+
+a:active {color:black; text-decoration:none}
+
+body {overflow:hidden}
+
+#hra {display:none}
+
+.gridContainer {margin-left: auto; margin-right: auto; width: 97.35%; padding-left: 0.825%; padding-right: 0.825}
+
+header {padding-bottom:10px; position:fixed; margin-top:0px; width:99%; background-color:white; z-index:1; height:70px; padding-top:20px}
+
+header li {text-decoration:none; display:inline; padding-left:3px}
+
+header ul {margin-top:20px; display:inline; padding-left:0px}
+
+#home span {color:#0F75BC; font-size:16px}
+
+#home img {width:100%; height:200px}
+
+#contacts table { position:relative; width:80%; margin:auto}
+
+#contacts td {padding:10px; text-align:center}
+
+#contacts img { width:100px; height:75px}
+
+#about h3, #contacts h3, #home h3, #leadership h3 {color:#0F75BC; padding-left:15px}
+
+#about p, #contacts p, #home p, #leadership p {padding:20px}
+
+#aboutGet {height:0px; display:none}
+
+#bigTable {width:90%; display:none}
+
+#smallTabele {width:90%; display:none}
+
+#leadership td {text-align:center; padding-top:100px}
+
+#leadershipGet {display:none}
+
+blockquote {padding:20px; margin-left:40px}
+
+footer {padding-top:20px; position:relative}
+
+#logo {margin:auto; height:105px}
+
+.social{height:30px; width:30px; background-color:#0F75BC; border-radius:15px; padding:3px; padding-left:5px; display:inline}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 700px) {
+
+.gridContainer { width:97.35%; padding-left:0.825%; padding-right:0.825%; margin: auto}
+
+header {padding-bottom:10px; position:fixed; width:99%; background-color:white; z-index:1; height:90px; padding-top:20px}
+
+header li {text-decoration:none; display:inline; padding-left:30px; padding-right:30px}
+
+header ul {display:inline; padding-left:50px}
+
+#hra {display:inline}
+
+header img {padding-left:20px}
+
+#home {margin-top:100px}
+
+#home img {width:100%; height:400px}
+
+#contacts table { position:relative; width:50%; margin:auto}
+
+#contacts td {padding:10px; text-align:center}
+
+#contacts img { width:45px; height:45px}
+
+#aboutGet {height:20px; display:block}
+
+#bigTable {width:90%; display:block}
+
+#smallTable {width:90%; display:none}
+
+#leadershipGet {display:block}
+
+}
